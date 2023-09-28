@@ -24,10 +24,10 @@
             <a class="navbar-brand mr-auto" href="#"><img src="images/logo.png" height="30" width="41"></a>
            <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span></span>Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span>About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Menu</a></li>
-                <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span></span> Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
             </ul>
            </div>                 
         </div>
@@ -35,28 +35,30 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row">
-                <div class="row row-header"> 
+                <div class="col-12 col-sm-6 "> 
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-12 col-sm align-self-center">
                     <img src="images/logo.png" class="img-fluid">
                 </div>
-
+                <div>
+                    <button id="scrollReserve" type="submit" class="btn btn-warning">Reserve Table</button>
+                </div>
             </div>
         </div>
     </header>
 
-    <div>
+    <div class="offset-1">
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div class="media">
+            <div class="media col-sm-8">
                 <img class="d-flex mr-3 img-thumbnail align-self-center"
                         src="images/uthappizza.png" alt="Uthappizza">
                 <div class="media-body">
-                    <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> </h2>
+                    <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT </span> <span class="badge badge-pill badge-secondary">$4.99</span> </h2>
                     <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
                         Italian pizza, topped with Cerignola olives, ripe vine
                         cherry tomatoes, Vidalia onion, Guntur chillies and
@@ -68,12 +70,19 @@
 
 
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+            <div class="col-12 col-sm-4 order-sm-first col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
-            <div class="col col-sm order-sm-first col-md">
-                <h2>Weekend Grand Buffet</h2>
+            <div class="col col-sm order-sm-last col-md-8">
+                <div class="media">
+                    <img class="order-sm-last" src="images/buffet.png" alt="buffet">
+                    <div>
+                        <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
                 <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    
+                </div>
+                
             </div>
         </div>
 
@@ -81,11 +90,11 @@
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
-            <div class="media">
+            <div class="media col-sm-9">
                 <img class="d-flex mr-3 img-thumbnail align-self-center"
                         src="images/alberto.png" alt="Alberto Somayya">
                 <div class="media-body">
-                    <h2 class="mt-0">Alberto Somayya <span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                    <h2 class="mt-0">Alberto Somayya</h2>
                     <h4>Executive Chef</h4>
                     <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide
                         International experience having worked closely with
@@ -94,11 +103,61 @@
                         </p>
                 </div>
             </div>
-
+        </div>
+        <div class="card" style="margin-right: 300px; margin-left: 200px;" id="ReserveTable">
+            <h3 class="text-white" style="background-color: #FDC02F; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">Reserve a Table</h3>
+            <div>
+                <div>
+                    <div class="form-check" style="display: flex; padding-top: 20px;">
+                        <h5>Number of Guests</h1>
+                        <div style="padding-left: 100px;">
+                            <input class="form-check-input" type="radio" value="1">
+                        <label class="form-check-label">1</label>
+                        </div>
+                        <div style="padding-left: 50px;">
+                            <input class="form-check-input" type="radio" value="2">
+                        <label class="form-check-label">2</label>
+                        </div>
+                        <div style="padding-left: 50px;">
+                            <input class="form-check-input" type="radio" value="3">
+                        <label class="form-check-label">3</label>
+                        </div>
+                        <div style="padding-left: 50px;">
+                            <input class="form-check-input" type="radio" value="4">
+                        <label class="form-check-label">4</label>
+                        </div>
+                        <div style="padding-left: 50px;">
+                            <input class="form-check-input" type="radio" value="5">
+                        <label class="form-check-label">5</label>
+                        </div>
+                        <div style="padding-left: 50px;">
+                            <input class="form-check-input" type="radio" value="6">
+                        <label class="form-check-label">6</label>
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <h5 style="padding-left: 20px; padding-top: 20px;">Date and Time</h5>
+                        <div class="form-group row" style="padding-top: 20px; padding-left: 120px;">
+                            <div class="col-12 col-md-5">
+                                <input type="text" class="form-control" id="Date" name="date" placeholder="Date">
+                            </div>
+                            <div class="col-7 col-md-7">
+                                <input type="text" class="form-control" id="Time" name="time" placeholder="Time">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding-left: 300px; padding-top: 50px;">
+                        <button type="submit" class="btn btn-primary">Reserve</button>
+                    </div>
+                    <br><br>
+                </div>
+                
+            </div>
+            
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer mt-5">
         <div class="container">
             <div class="row">             
                 <div class="col-4 offset-1 col-sm-2">
@@ -141,10 +200,21 @@
            </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#scrollReserve").click(function () {
+                $("html, body").animate({ scrollTop: $("#ReserveTable").offset().top }, 1000);
+            });
+        });
+    </script>
 </body>
 
 </html>
